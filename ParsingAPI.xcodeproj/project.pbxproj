@@ -13,6 +13,7 @@
 		124D51AC2917BA2A0034CA27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 124D51AA2917BA2A0034CA27 /* Main.storyboard */; };
 		124D51AE2917BA310034CA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124D51AD2917BA310034CA27 /* Assets.xcassets */; };
 		124D51B12917BA310034CA27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 124D51AF2917BA310034CA27 /* LaunchScreen.storyboard */; };
+		124D51BA2917BC7F0034CA27 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D51B92917BC7F0034CA27 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		124D51AD2917BA310034CA27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		124D51B02917BA310034CA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		124D51B22917BA310034CA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		124D51B92917BC7F0034CA27 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		124D51A32917BA2A0034CA27 /* ParsingAPI */ = {
 			isa = PBXGroup;
 			children = (
+				124D51B82917BC630034CA27 /* Models */,
 				124D51A42917BA2A0034CA27 /* AppDelegate.swift */,
 				124D51A62917BA2A0034CA27 /* SceneDelegate.swift */,
 				124D51A82917BA2A0034CA27 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				124D51B22917BA310034CA27 /* Info.plist */,
 			);
 			path = ParsingAPI;
+			sourceTree = "<group>";
+		};
+		124D51B82917BC630034CA27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				124D51B92917BC7F0034CA27 /* Weather.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124D51BA2917BC7F0034CA27 /* Weather.swift in Sources */,
 				124D51A92917BA2A0034CA27 /* ViewController.swift in Sources */,
 				124D51A52917BA2A0034CA27 /* AppDelegate.swift in Sources */,
 				124D51A72917BA2A0034CA27 /* SceneDelegate.swift in Sources */,
@@ -301,9 +313,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sammas.ParsingAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,9 +343,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sammas.ParsingAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
