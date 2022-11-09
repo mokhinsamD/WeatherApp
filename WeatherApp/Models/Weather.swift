@@ -15,11 +15,11 @@ struct Location: Decodable {
 }
 
 struct Current: Decodable {
-    let temp_c: Double
-    let wind_mph: Double
+    let tempC: Double
+    let windMph: Double
     let condition: Condition
 }
 
 struct Condition: Decodable {
-    let text: String
+    let icon: String
 }
