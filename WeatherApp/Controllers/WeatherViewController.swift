@@ -20,7 +20,6 @@ class WeatherViewController: UIViewController {
         super.viewDidLoad()
         fetchWeather()
     }
-    
 }
 
 extension WeatherViewController {
